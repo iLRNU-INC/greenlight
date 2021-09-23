@@ -28,11 +28,11 @@
       </script>
     <% end %>
 
-    <title><%= yield(:page_title).present? ? yield(:page_title) : t("bigbluebutton") %></title>
-    <meta property="og:title" content="<%= yield(:page_title).present? ? yield(:page_title) : t("bigbluebutton") %>" />
+    <title><%= yield(:page_title).present? ? yield(:page_title) : "LiveClass @ iLRNU" %></title>
+    <meta property="og:title" content="<%= yield(:page_title).present? ? yield(:page_title) : "LiveClass @ iLRNU" %>" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content=<%=user_locale(@room&.owner)%> />
-    <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "Greenlight", locale: :en) %>" />
+    <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "iLRNU", locale: :en) %>" />
     <meta property="og:url" content="<%= request.base_url %>" />
     <meta property="og:image" content="<%= logo_image %>" />
     <meta name="viewport" content= "width=device-width, user-scalable=no">
@@ -68,9 +68,7 @@
         <div class="alert alert-icon alert-danger text-center mb-0">
           <div class="flash alert d-inline">
             <i class="fas fa-exclamation-triangle"></i>
-            <p class="d-inline"><%= t("test_install",
-              href: link_to(t("docs").downcase, "http://docs.bigbluebutton.org/install/greenlight-v2.html#2-install-greenlight", target: "_blank", rel: "noopener")
-            ).html_safe %>
+            <!-- <p class="d-inline">< %= t("test_install", href: link_to(t("docs").downcase, "http://docs.bigbluebutton.org/install/greenlight-v2.html#2-install-greenlight", target: "_blank", rel: "noopener")).html_safe %> -->
           </div>
         </div>
       <% end %>

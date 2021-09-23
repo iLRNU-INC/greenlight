@@ -304,6 +304,7 @@ en:
     submit: Submit
   go_back: Go back
   greenlight: Greenlight
+  ilrnu: iLRNU
   header:
     all_recordings: All Recordings
     dropdown:
@@ -328,11 +329,11 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
-    video: Watch our tutorial on using Greenlight
-    upgrade: Show me how to upgrade to 2.0!
-    version: We've released a new version of Greenlight, but your database isn't compatible.
+    about: ""
+    welcome: Welcome to LiveClass @ iLRNU.
+    video: ""
+    upgrade: ""
+    version: ""
   language_default: Default (browser language)
   ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
   login: Sign in

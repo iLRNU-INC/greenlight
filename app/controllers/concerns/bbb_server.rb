@@ -66,7 +66,7 @@ module BbbServer
       logoutURL: options[:meeting_logout_url] || '',
       moderatorPW: room.moderator_pw,
       attendeePW: room.attendee_pw,
-      moderatorOnlyMessage: options[:moderator_message],
+      moderatorOnlyMessage: "", #options[:moderator_message],
       "meta_#{META_LISTED}": options[:recording_default_visibility] || false,
       "meta_bbb-origin-version": Greenlight::Application::VERSION,
       "meta_bbb-origin": "Greenlight",
